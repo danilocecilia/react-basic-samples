@@ -1,19 +1,16 @@
 import React from "react";
-import { Link } from "react-router";
+import Nav from '../components/layout/Nav';
+import Footer from '../components/layout/Footer';
 
 export default class Layout extends React.Component {
     render() {
         return (
-            <div class="jumbotron">
-                {this.props.children}
-                <Link to="about">about</Link>
-                <h1 class="display-3">Hello, world Dan!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4" />
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </p>
+            <div>
+                <Nav />
+                <div class="jumbotron">
+                    {this.props.children}
+                </div>
+                <Footer/>
             </div>
         );
     }

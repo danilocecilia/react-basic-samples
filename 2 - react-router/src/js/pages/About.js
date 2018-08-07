@@ -5,7 +5,7 @@ export default class About extends React.Component {
         return (
             <div>
                 ABOUT PAGE
-        </div>
+            </div>
         )
     }
 }
